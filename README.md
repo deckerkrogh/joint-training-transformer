@@ -2,8 +2,11 @@
 
 In this project a single transformer was trained in PyTorch which can solve two tasks at the same time: IOB Slot tagging and relation extraction.
 
-### Training: 
+### Setup
+	pip install -r requirements.txt
 	./load_embeddings.sh
+
+### Training: 
 	python main.py --train --data "hw1_train.csv" --save_model "./joint_trained_model.pt"
 
 ### Evaluating: 
